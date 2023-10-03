@@ -1,0 +1,1391 @@
+/*................................,......................Desktop view........................................................................*/
+@media (min-width: 1024px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /*///////////////////////////////////////////////////// company name style ///////////////////////////////////////////////////////////////*/
+    .company-name {
+
+        margin-left: 35px;
+        width: 96%;
+        height: 80px;
+        background-color: rgb(255, 255, 255);
+        align-content: center;
+        display: flex;
+
+    }
+
+    .company-name {
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 900;
+    }
+
+    #one {
+        color: black;
+        font-size: 29px;
+        margin: 10px 0px 22px 13px;
+        text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+        font-family: cursive;
+    }
+
+    #two {
+        color: rgb(233, 27, 27);
+        font-size: 29px;
+        margin: 10px 1px 1px 3px;
+        text-shadow: 2px 2px 4px rgba(228, 51, 51, 0.5);
+        font-family: cursive;
+        opacity: 100%;
+
+    }
+
+    #logo {
+        width: 80px;
+        height: 90px;
+        border-radius: 50%;
+        margin: -10px 1px 1px 9px;
+    }
+
+    hr {
+        color: blue;
+        width: 95%;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    /* //////////////////////////////////////////////////////////navbar starts //////////////////////////////////////////////////////////////*/
+    nav {
+        color: rgb(2, 2, 2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        float: right;
+    }
+
+    nav .mainMenu {
+        display: flex;
+        list-style: none;
+    }
+
+    nav .mainMenu li a {
+        background-color: inherit;
+        display: inline-block;
+        padding: 6px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(7, 7, 7);
+        font-size: 25px;
+        transition: 0.2s ease;
+        text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+    }
+
+    nav .mainMenu li a:hover {
+        background: rgb(255, 94, 0);
+    }
+
+    nav .openMenu {
+        font-size: 30px;
+        display: flex;
+        cursor: pointer;
+    }
+
+    nav .mainMenu .closeMenu,
+    .icons i {
+        font-size: 2rem;
+        display: none;
+        cursor: pointer;
+    }
+
+    .fa-facebook:hover {
+        color: rgb(0, 110, 255);
+    }
+
+    .fa-linkedin:hover {
+        color: rgb(86, 154, 243);
+    }
+
+    .fa-instagram:hover {
+        color: rgb(255, 0, 191);
+    }
+
+    .fa-github:hover {
+        color: rgb(255, 123, 0);
+    }
+
+    nav .logo {
+        margin: 6px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 40px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(252, 248, 248);
+        transition: top 1s ease 0s;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+        margin: 19px 1px 1px 800px;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 10px;
+
+    }
+
+    /*//////////////////////////////////////////////////////upper bar/////////////////////////////////////////////////////*/
+    #upper-bar {
+        width: 100%;
+        height: 150px;
+        background-color: #f0f0f0;
+        text-align: center;
+        margin: 15px 1px 10px 0px;
+
+    }
+
+    #upper-bar img {
+        display: block;
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+        opacity: 60%;
+        position: relative;
+    }
+
+    #upper-bar::before {
+
+        display: block;
+        font-size: 24px;
+        margin-bottom: 10px;
+
+    }
+
+    #heads {
+        width: 99%;
+        height: inherit;
+        background-color: #000000;
+        position: absolute;
+        color: white;
+        opacity: 80%;
+        font-weight: bold;
+        margin: -150px 1px 1px 1px;
+    }
+
+    #heads a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /*///////////////////////////////////////////////////contact bar/////////////////////////////////////////////////////*/
+
+    .contact-bar {
+        width: 80%;
+        display: flex;
+        margin: 15px 1px 30px 120px;
+    }
+
+        .collapsible {
+            
+            margin: 20px 0px 1px 50px;
+            width: 40%;
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+    
+        }
+    
+        .collapsible label {
+            position: relative;
+            font-weight: 600;
+            color: rgb(0, 0, 0);
+            box-shadow: 3px 1px 7px 0 #ccc;
+            border: 1px solid grey;
+            background-color: #ffffff;
+            display: block;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    
+        #image {
+            position: absolute;
+            height: 28px;
+            width: 28px;
+            margin-top: -3px;
+            right: 0;
+    
+        }
+    
+        #collapsible-head {
+            display: none;
+    
+        }
+    
+        #collapsible-head:checked+label+.collapisble-text {
+    
+            display: block;
+            overflow: visible;
+            padding-bottom: 5px;
+            background: #fff;
+            opacity: 1;
+            top: 0;
+            transition: all 0.8s ease-in;
+        }
+    
+    
+        .collapisble-text {
+            display: none;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid grey;
+            background-color: #d6d4d4;
+            box-shadow: 3px 1px 7px 0 #ccc;
+            border-radius: 3px;
+        }
+    
+    
+        p {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+
+    #form-bar h1 {
+        margin: 25px 1px 25px 1px;
+        text-align: center;
+        color: white;
+    }
+
+  
+
+    #form-bar {
+        
+        width: 70%;
+        background: rgba(2, 71, 2, 0.925);
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 5px;
+        margin-left: 70px;
+    }
+
+    input[type=text],
+    input[type=number] {
+        width: 47.5%;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        margin: 13px 1px 23px 9px;
+        justify-content: space-between;
+    }
+
+    input[type=email],
+    input[type=date] {
+        width: 98%;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        margin: 13px 1px 15px 9px;
+    }
+
+    #msg {
+        width: 98%;
+        height: 150px;
+        font-size: large;
+        color: #727070;
+        border-radius: 10px;
+        margin: 13px 1px 15px 9px;
+    }
+
+    input[type=text],
+    input[type=number],
+    input[type=email],
+    input[type=date]::placeholder {
+        font-size: 15px;
+    }
+
+    button {
+        width: 40%;
+        height: 60px;
+        color: white;
+        background-color: #000;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-shadow: 0px 2px 3px #1a1919;
+        justify-content: center;
+        align-items: center;
+    }
+        .contacts {
+            display: flex;
+            flex-direction: column;
+    
+        }
+    
+        .call,
+        .whatsapp-msg {
+            width: 100%;
+            height: 33px;
+            font-size: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0a3d04;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.4s ease-in-out;
+        }
+    
+    
+        .call:hover{
+            background-color: #126907;
+                height: 35px;
+                width: 101%;
+        }
+        .whatsapp-msg:hover {
+            background-color: #0056b3;
+            height: 35px;
+            width: 101%;
+        }
+    
+        .call img,
+        .whatsapp-msg img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    
+        .call a,
+        .whatsapp-msg a,
+        .book a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+      
+    /*//////////////////////////////////////////////////////// contact us  starts////////////////////////////////////////////////////////////*/
+
+    .footer {
+        background-color: #1a1919;
+            padding: 20px 0;
+            color: rgb(206, 206, 206);
+    }
+
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        width: 20%;
+    }
+
+    .gif {
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-column li {
+        margin-bottom: 5px;
+    }
+
+    .footer-column a {
+        color: rgb(206, 206, 206);
+                text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .footer-column a:hover {
+        color: #428bca;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-copyright p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* ********************************************************** mobile view****************************************************************** */
+@media only screen and (max-width: 800px) {
+    body {
+        
+        width: 100%;
+        height: auto;
+    }
+
+    /*///////////////////////////////////////////////////// company name style ///////////////////////////////////////////////////////////////*/
+    .company-name {
+        margin-left: 2px;
+        width: 96%;
+        height: 9vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+    }
+
+    #one {
+        color: black;
+        font-size: 23px;
+        margin: 10px 0px 0px 8px;
+        text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+        font-family: cursive;
+    }
+
+    #two {
+        color: rgb(233, 27, 27);
+        font-size: 23px;
+        margin: 10px 1px 1px 3px;
+        text-shadow: 2px 2px 4px rgba(228, 51, 51, 0.5);
+        font-family: cursive;
+        opacity: 100%;
+
+    }
+
+    #logo {
+        width: 67px;
+        height: 69px;
+        border-radius: 50%;
+        margin: -3px -125px 1px 4px;
+    }
+
+    hr {
+        color: blue;
+        width: 95%;
+    }
+
+
+    /* //////////////////////////////////////////////////////////navbar starts //////////////////////////////////////////////////////////////*/
+     /*/////////////////////////////////////////////////////////// Navbar starts////////////////////////////////////// */
+    nav {
+        color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        float: right;
+        margin: 1px 1px 1px 1px;
+    }
+
+    .mainMenu {
+        height: 55vh;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        left: 30%;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(252, 248, 248);
+        transition: top 1s ease 0s;
+        display: none;
+    }
+
+    .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .openMenu {
+        display: block;
+        margin: 13px 1px 1px 225px;
+    }
+
+    .mainMenu li a:hover {
+        background: none;
+        list-style: none;
+        color: rgb(255, 123, 0);
+    }
+
+    /* Icons */
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    .fa-facebook:hover {
+        color: rgb(0, 110, 255);
+    }
+
+    .fa-linkedin:hover {
+        color: rgb(86, 154, 243);
+    }
+
+    .fa-instagram:hover {
+        color: rgb(255, 0, 191);
+    }
+
+    .fa-github:hover {
+        color: rgb(255, 123, 0);
+    }
+    
+        .mainMenu li{
+            list-style: none;
+        }
+        nav .mainMenu li a {
+         background-color: inherit;
+         display: inline-block;
+         padding: 6px;
+         text-decoration: none;
+         text-transform: uppercase;
+         color: rgb(7, 7, 7);
+         font-size: 20px;
+         transition: 0.2s ease;
+         text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+          }
+
+        nav .mainMenu li a:hover {
+            background: rgb(255, 94, 0);
+        }
+    
+        nav .mainMenu .closeMenu {
+            display: block;
+            position: absolute;
+            font-size: 30px;
+            top: 20px;
+            right: 20px;
+            
+        }
+    
+        nav .openMenu {
+            display: block;
+            margin: 19px 1px 1px 215px;
+        }
+    
+        nav .mainMenu li a:hover {
+            background: none;
+            color: rgb(255, 123, 0);
+        }
+    
+        .icons i {
+            display: inline-block;
+            width: 10px;
+            padding: 10px;
+    
+        }
+
+        nav .logo {
+         margin: 6px;
+         cursor: pointer; 
+         text-transform: uppercase;
+        }
+
+        nav .openMenu {
+            font-size: 25px;
+            display: flex;
+            cursor: pointer;
+        }
+  
+    /*//////////////////////////////////////////////////////upper bar/////////////////////////////////////////////////////*/
+    #upper-bar {
+        width: 100%;
+        height: 80px;
+        background-color: #f0f0f0;
+        text-align: center;
+        margin: 4px 1px 10px 0px;
+
+    }
+
+    #upper-bar img {
+        display: block;
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+        opacity: 60%;
+        position: relative;
+    }
+
+    #upper-bar::before {
+
+        display: block;
+        font-size: 18px;
+        margin-bottom: 10px;
+
+    }
+
+    #heads {
+        width: 100%;
+        height: inherit;
+        background-color: #000000;
+        position: absolute;
+        color: white;
+        opacity: 80%;
+        font-weight: bold;
+        margin: -79px 1px 1px 0px;
+    }
+
+    #heads h1 {
+        font-size: 18px;
+    }
+
+    #heads h3 {
+        font-size: 12px;
+    }
+
+    #heads a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /*///////////////////////////////////////////////////contact bar/////////////////////////////////////////////////////*/
+
+   
+
+        /*///////////////////////////////////////////////////contact bar/////////////////////////////////////////////////////*/
+
+    .contact-bar {
+        width: 80%;
+        height: 100%;
+        margin: 15px 1px 30px 10px;
+    }
+
+       
+        .collapsible {
+            margin: 20px 0px 1px 3px;
+            width: 92%;
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            
+        }
+        .collapsible label{
+            position: relative;
+                font-weight: 600;
+                color: rgb(0, 0, 0);
+                box-shadow: 3px 1px 7px 0 #ccc;
+                border: 1px solid grey;
+                background-color: #ffffff;
+                display: block;
+                cursor: pointer;
+                padding: 10px;
+                border-radius: 5px;
+        }
+        #image{
+            position: absolute;
+            height: 28px;
+            width: 28px;
+            margin-top: -3px ;
+            right: 0;
+            
+        }
+        #collapsible-head {
+            display: none;
+
+        }
+
+        #collapsible-head:checked + label + .collapisble-text {
+            
+            display: block;
+            overflow:visible;
+            padding-bottom: 5px;
+            background: #fff;
+            opacity: 1;
+            top: 0;
+            transition: all 0.8s ease-in ;
+        }
+       
+
+        .collapisble-text {
+            display: none;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid grey;
+            background-color: #d6d4d4;
+            box-shadow: 3px 1px 7px 0 #ccc;
+            border-radius: 3px;
+        }   
+
+       
+        p {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+
+    #form-bar h1 {
+        margin: 25px 1px 25px 1px;
+        text-align: center;
+        color: white;
+    }
+
+  
+
+    #form-bar {
+        
+        width: 115%;
+        background: rgba(2, 71, 2, 0.925);
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 5px;
+        
+    }
+
+    input[type=text],
+    input[type=number] {
+        width: 93.5%;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        margin: 13px 1px 23px 9px;
+        justify-content: space-between;
+    }
+
+    input[type=email],
+    input[type=date] {
+        width: 93.5%;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        margin: 13px 1px 15px 9px;
+    }
+
+    #msg {
+        width: 93%;
+        height: 150px;
+        font-size: large;
+        color: #727070;
+        border-radius: 10px;
+        margin: 13px 1px 15px 9px;
+    }
+
+    input[type=text],
+    input[type=number],
+    input[type=email],
+    input[type=date]::placeholder {
+        font-size: 15px;
+    }
+
+    button {
+        width: 40%;
+        height: 60px;
+        color: white;
+        background-color: #000;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-shadow: 0px 2px 3px #1a1919;
+        justify-content: center;
+        align-items: center;
+    }
+        .contacts {
+            display: flex;
+            flex-direction: column;
+    
+        }
+    
+        .call,
+        .whatsapp-msg {
+            width: 100%;
+            height: 33px;
+            font-size: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0a3d04;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.4s ease-in-out;
+        }
+    
+    
+        .call:hover{
+            background-color: #126907;
+                height: 35px;
+                width: 101%;
+        }
+        .whatsapp-msg:hover {
+            background-color: #0056b3;
+            height: 35px;
+            width: 101%;
+        }
+    
+        .call img,
+        .whatsapp-msg img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    
+        .call a,
+        .whatsapp-msg a,
+        .book a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+      
+
+
+    
+    /*//////////////////////////////////////////////////////// contact us  starts////////////////////////////////////////////////////////////*/
+
+    .footer {
+        margin: 17px 8px 27px 8px;
+        background-color: #1a1919;
+            padding: 20px 0;
+            color: rgb(206, 206, 206);
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-column {
+        width: 80%;
+    }
+
+    .gif {
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    .footer-column h3 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-column li {
+        margin-bottom: 5px;
+    }
+
+    .footer-column a {
+        color: rgb(206, 206, 206);
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .footer-column a:hover {
+        color: #428bca;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-copyright p {
+        font-size: 14px;
+    }
+
+}
+
+
+/* ********************************************************** tablet view****************************************************************** */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        
+        width: 100%;
+        height: auto;
+    }
+
+    /*///////////////////////////////////////////////////// company name style ///////////////////////////////////////////////////////////////*/
+    .company-name {
+
+        margin-left: 35px;
+        width: 96%;
+        height: 80px;
+        background-color: rgb(255, 255, 255);
+        align-content: center;
+        display: flex;
+
+    }
+
+    .company-name {
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 900;
+    }
+
+    #one {
+        color: black;
+        font-size: 29px;
+        margin: 10px 0px 22px 13px;
+        text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+        font-family: cursive;
+    }
+
+    #two {
+        color: rgb(233, 27, 27);
+        font-size: 29px;
+        margin: 10px 1px 1px 3px;
+        text-shadow: 2px 2px 4px rgba(228, 51, 51, 0.5);
+        font-family: cursive;
+        opacity: 100%;
+
+    }
+
+    #logo {
+        width: 80px;
+        height: 90px;
+        border-radius: 50%;
+        margin: -10px 1px 1px 9px;
+    }
+
+    hr {
+        color: blue;
+        width: 95%;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+   /* //////////////////////////////////////////////////////////navbar starts //////////////////////////////////////////////////////////////*/
+   nav {
+       color: rgb(0, 0, 0);
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       right: 0;
+   }
+
+   nav .mainMenu {
+       height: 45vh;
+       width: 40%;
+       position: absolute;
+       top: -10px;
+       right: -10px;
+       z-index: 10;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background: rgb(252, 248, 248);
+       transition: top 1s ease 0s;
+       display: none;
+
+   }
+
+   .mainMenu li {
+       list-style: none;
+   }
+
+   nav .mainMenu li a {
+       background-color: inherit;
+       display: inline-block;
+       padding: 6px;
+       text-decoration: none;
+       text-transform: uppercase;
+       color: rgb(7, 7, 7);
+       font-size: 20px;
+       transition: 0.2s ease;
+       text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+   }
+
+   nav .mainMenu li a:hover {
+       background: rgb(255, 94, 0);
+   }
+
+   nav .mainMenu .closeMenu {
+       display: block;
+       position: absolute;
+       font-size: 30px;
+       top: 20px;
+       right: 20px;
+
+   }
+
+   nav .openMenu {
+       display: block;
+       margin: 19px 1px 1px 470px;
+   }
+
+   nav .mainMenu li a:hover {
+       background: none;
+       color: rgb(255, 123, 0);
+   }
+
+   .icons i {
+       display: inline-block;
+       width: 10px;
+       padding: 10px;
+
+   }
+
+   .fa-facebook:hover {
+       color: rgb(0, 110, 255);
+   }
+
+   .fa-linkedin:hover {
+       color: rgb(86, 154, 243);
+   }
+
+   .fa-instagram:hover {
+       color: rgb(255, 0, 191);
+   }
+
+   .fa-github:hover {
+       color: rgb(255, 123, 0);
+   }
+
+   nav .logo {
+       margin: 6px;
+       cursor: pointer;
+       text-transform: uppercase;
+   }
+
+   nav .openMenu {
+       font-size: 25px;
+       display: flex;
+       cursor: pointer;
+   }
+     /*//////////////////////////////////////////////////////upper bar/////////////////////////////////////////////////////*/
+    #upper-bar {
+        width: 100%;
+        height: 150px;
+        background-color: #f0f0f0;
+        text-align: center;
+        margin: 15px 1px 10px 0px;
+
+    }
+
+    #upper-bar img {
+        display: block;
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+        opacity: 60%;
+        position: relative;
+    }
+
+    #upper-bar::before {
+
+        display: block;
+        font-size: 24px;
+        margin-bottom: 10px;
+
+    }
+
+    #heads {
+        width: 99%;
+        height: inherit;
+        background-color: #000000;
+        position: absolute;
+        color: white;
+        opacity: 80%;
+        font-weight: bold;
+        margin: -150px 1px 1px 1px;
+    }
+
+    #heads a {
+        text-decoration: none;
+        color: white;
+    }
+
+ /*///////////////////////////////////////////////////contact bar/////////////////////////////////////////////////////*/
+
+    .contact-bar {
+        width: 100%;
+        display: flex;
+        margin: 15px 1px 30px 0px;
+    }
+
+        .collapsible {
+            
+            margin: 20px 0px 1px 50px;
+            width: 40%;
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+    
+        }
+    
+        .collapsible label {
+            position: relative;
+            font-weight: 600;
+            color: rgb(0, 0, 0);
+            box-shadow: 3px 1px 7px 0 #ccc;
+            border: 1px solid grey;
+            background-color: #ffffff;
+            display: block;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    
+        #image {
+            position: absolute;
+            height: 28px;
+            width: 28px;
+            margin-top: -3px;
+            right: 0;
+    
+        }
+    
+        #collapsible-head {
+            display: none;
+    
+        }
+    
+        #collapsible-head:checked+label+.collapisble-text {
+    
+            display: block;
+            overflow: visible;
+            padding-bottom: 5px;
+            background: #fff;
+            opacity: 1;
+            top: 0;
+            transition: all 0.8s ease-in;
+        }
+    
+    
+        .collapisble-text {
+            display: none;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid grey;
+            background-color: #d6d4d4;
+            box-shadow: 3px 1px 7px 0 #ccc;
+            border-radius: 3px;
+        }
+    
+    
+        p {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+
+    #form-bar h1 {
+        margin: 25px 1px 25px 1px;
+        text-align: center;
+        color: white;
+    }
+
+  
+
+    #form-bar {
+        
+        width: 75%;
+
+        background: rgba(2, 71, 2, 0.925);
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 5px;
+        
+    }
+
+    input[type=text],
+    input[type=number] {
+        width: 46%;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        margin: 13px 1px 23px 9px;
+        justify-content: space-between;
+    }
+
+    input[type=email],
+    input[type=date] {
+        width: 96%;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        margin: 13px 1px 15px 9px;
+    }
+
+    #msg {
+        width: 96%;
+        height: 150px;
+        font-size: large;
+        color: #727070;
+        border-radius: 10px;
+        margin: 13px 1px 15px 9px;
+    }
+
+    input[type=text],
+    input[type=number],
+    input[type=email],
+    input[type=date]::placeholder {
+        font-size: 15px;
+    }
+
+    button {
+        width: 40%;
+        height: 60px;
+        color: white;
+        background-color: #000;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-shadow: 0px 2px 3px #1a1919;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+        .contacts {
+            display: flex;
+            flex-direction: column;
+    
+        }
+    
+        .call,
+        .whatsapp-msg {
+            width: 100%;
+            height: 33px;
+            font-size: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0a3d04;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.4s ease-in-out;
+        }
+    
+    
+        .call:hover{
+            background-color: #126907;
+                height: 35px;
+                width: 101%;
+        }
+        .whatsapp-msg:hover {
+            background-color: #0056b3;
+            height: 35px;
+            width: 101%;
+        }
+    
+        .call img,
+        .whatsapp-msg img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    
+        .call a,
+        .whatsapp-msg a,
+        .book a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+   
+    /*//////////////////////////////////////////////////////// contact us  starts////////////////////////////////////////////////////////////*/
+
+    .footer {
+        background-color: #1a1919;
+            padding: 20px 0;
+            color: rgb(206, 206, 206);
+    }
+
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        width: 20%;
+    }
+
+    .gif {
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-column li {
+        margin-bottom: 5px;
+    }
+
+    .footer-column a {
+        color: rgb(206, 206, 206);
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .footer-column a:hover {
+        color: #428bca;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-copyright p {
+        font-size: 14px;
+    }
+}

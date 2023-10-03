@@ -1,0 +1,2052 @@
+/*................................,......................Desktop view........................................................................*/
+@media (min-width: 1024px) {
+    
+     *{
+        box-sizing: border-box;
+     }
+    
+/*///////////////////////////////////////////////////// company name style ///////////////////////////////////////////////////////////////*/
+     .company-name {
+
+         margin-left: 35px;
+         width: 96%;
+         height: 80px;
+         background-color: rgb(255, 255, 255);
+         align-content: center;
+         display: flex;
+
+     }
+     .company-name{
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 900;
+     }
+
+     #one {
+         color: black;
+         font-size: 29px;
+         margin: 10px 0px 22px 13px;
+         text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+         font-family: cursive;
+     }
+
+     #two {
+         color: rgb(233, 27, 27);
+         font-size: 29px;
+         margin: 10px 1px 1px 3px;
+         text-shadow: 2px 2px 4px rgba(228, 51, 51, 0.5);
+         font-family: cursive;
+         opacity: 100%;
+
+     }
+
+     #logo {
+         width: 80px;
+         height: 90px;
+         border-radius: 50%;
+         margin: -10px 1px 1px 9px;
+     }
+
+    hr  {
+         color: blue;
+         width: 95%;
+     }
+
+     body {
+         font-family: Arial, sans-serif;
+     }
+/* //////////////////////////////////////////////////////////navbar starts //////////////////////////////////////////////////////////////*/
+     nav {
+         color: rgb(2, 2, 2);
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         float: right;
+     }
+
+     nav .mainMenu {
+         display: flex;
+         list-style: none;
+     }
+
+     nav .mainMenu li a {
+         background-color: inherit;
+         display: inline-block;
+         padding: 6px;
+         text-decoration: none;
+         text-transform: uppercase;
+         color: rgb(7, 7, 7);
+         font-size: 25px;
+         transition: 0.2s ease;
+         text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+     }
+
+     nav .mainMenu li a:hover {
+         background: rgb(255, 94, 0);
+     }
+
+     nav .openMenu {
+         font-size: 30px;
+         display: flex;
+         cursor: pointer;
+     }
+
+     nav .mainMenu .closeMenu,
+     .icons i {
+         font-size: 2rem;
+         display: none;
+         cursor: pointer;
+     }
+
+     .fa-facebook:hover {
+         color: rgb(0, 110, 255);
+     }
+
+     .fa-linkedin:hover {
+         color: rgb(86, 154, 243);
+     }
+
+     .fa-instagram:hover {
+         color: rgb(255, 0, 191);
+     }
+
+     .fa-github:hover {
+         color: rgb(255, 123, 0);
+     }
+
+     nav .logo {
+         margin: 6px;
+         cursor: pointer; 
+         text-transform: uppercase;
+     }
+
+      nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 40px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(252, 248, 248);
+        transition: top 1s ease 0s;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+        margin: 19px 1px 1px 800px;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 10px;
+
+    }
+
+
+/*////////////////////////////////////////////////////////////// slider  starts//////////////////////////////////////////////////////////// */
+        .slider-container {
+            margin-top: 100px;
+            width: 1330px;
+            height: 400px;
+            margin: 10px 0px 0px 10px;
+            position: relative;
+            overflow: auto;
+            
+        }
+    
+        .slider {
+            width: 100%;
+            height: 100%;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    
+        .slider img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+        }
+        .buttons {
+            position: absolute;
+            cursor: pointer;
+    
+        }
+    
+        .buttons img {
+            background-color: inherit;
+            border-radius: 50%;
+            border: 2px solid rgb(0, 204, 255);
+            width: 39px;
+            height: 39px;
+    
+        }
+    
+        .buttons button:hover {
+            width: 40px;
+            height: 40px;
+        }
+    
+        #prev {
+            float: left;
+            margin: 180px 1px 1px 1px;
+        }
+    
+        #next {
+            margin: 180px 1px 1px 1230px;
+        }
+       
+     
+/*///////////////////////////////////////////////////////// our cars area starts//////////////////////////////////////////////////////////// */
+    .ourcars{
+        margin-top: 30px ;
+        margin-bottom: 25px;
+       display: flex;
+       justify-content: space-around;
+    }   
+    .ourcars a{
+        text-decoration: none;
+    }  
+    .ourcars h2{    
+        color: rgba(153, 0, 0, 0.897);
+        justify-content: center;
+        align-items: center;
+    }
+   #premium {
+       width: 120px;
+       height: 120px;
+       border: 5px solid #853b05;
+       margin-bottom: 10px;
+       background-color: antiquewhite;
+       border-radius: 50%;
+       overflow: hidden;
+       box-shadow: 3px  5px 9px #853b05;
+   }
+   #premium:hover {
+       transform: scale(1.03);
+       box-shadow: 4px 10px 15px #853b05;
+       
+   }
+     #eco:hover {
+       transform: scale(1.03);
+       box-shadow: 4px 10px 15px #85762d;
+       
+   }
+     #eco-ac:hover {
+       transform: scale(1.03);
+       box-shadow: 4px 10px 15px #155154;
+       
+   }
+     #carrier:hover {
+       transform: scale(1.03);
+       box-shadow: 4px 10px 15px #bb3838e0;
+       
+   }
+
+   #premium img {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+    }
+    #eco-ac{
+        width: 120px;
+       height: 120px;
+       border: 5px solid #155154;
+       background-color: antiquewhite;
+       border-radius: 50%;
+       overflow: hidden;
+       box-shadow: 3px 5px 9px #155154;
+    }
+         #eco-ac img {
+            width: 100%;
+                height: 100%;
+                object-fit: cover;
+         }
+    #eco{
+       width: 120px;
+       height: 120px;
+       border: 5px solid #85762d;
+       background-color: antiquewhite;
+       border-radius: 50%;
+       overflow: hidden;
+      box-shadow: 3px 5px 9px #85762d;
+    }
+         #eco img {
+            width: 100%;
+                height: 100%;
+                object-fit: cover;
+         }
+    #carrier{
+        width: 120px;
+       height: 120px;
+       border: 5px solid #bb3838e0;
+       background-color: antiquewhite;
+       border-radius: 50%;
+       overflow: hidden;
+      box-shadow: 3px 5px 9px #bb3838e0 ;
+    }
+        #carrier img {
+            width: 100%;
+                height: 100%;
+                object-fit: cover;
+         }
+    #prem{
+        margin: 10px 1px 10px -12px;
+    }
+    #ac{
+        margin: 10px 1px 10px -30px;
+    }
+    #economy{
+        margin: 10px 1px 10px -20px;
+    }
+    #carr{
+        margin: 10px 1px 10px -8px;
+    }
+
+
+
+/*///////////////////////////////////////////////////// booking area starts  ////////////////////////////////////////////////////////////////*/
+       .img-area {
+            width: 45%;
+            height: 100%;
+            
+        }
+    
+        .img-area img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    
+        .form-area {
+            border: 1px solid black;
+            width: 600px;
+           
+        }
+        
+        /* Styling for the booking area */
+        .booking-area {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            color: rgb(6, 6, 48);
+        }
+    
+        /* Styling for the image area */
+        .img-area img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+    
+        /* Styling for the form area */
+        .form-area {
+            border-radius: 20px;
+            padding: 5px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            border-color: #0056b3;
+            box-shadow: 2px 2px #2a3c50 ;
+        }
+    
+        /* Styling for labels */
+        label {
+            margin-left: 2px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    
+        /* Styling for input fields */
+        input[type="text"],
+        input[type="number"],
+        input[type="email"]{
+            width: 96%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+         input[type="date"]{
+            width: 25%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        select {
+           width: 96%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        /* Styling for the submit button */
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #0056b3;
+        }
+        /* Button Styles */
+.read-more {
+    background-color: #029728;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 245px;
+    transition: transform 0.3s;
+    animation: moveUpDown .3s infinite alternate; 
+}
+
+        @keyframes moveUpDown {
+         0% {
+            transform: translateY(0); 
+           }
+         100% {
+             transform: translateY(-4px); 
+            }
+        }
+
+        .read-more:hover {
+           background-color: #026824;
+           animation: none; 
+        }
+
+        .read-more:active {
+            transform: translateY(4px); 
+        }
+
+        .img-area img{
+         width: 100%;
+         height: 100%;
+         border: none;
+
+        }
+        
+/*/////////////////////////////////////////////////////// Direct booking profile /////////////////////////////////////////////////////////////*/
+        .direct-book {
+            width: 96%;
+            height: auto;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        
+        .cars {
+            border: 2px solid #333;
+            border-radius: 20px;
+            padding: 20px;
+            width: 60%;
+            height: 400px;
+            margin: 20px ;
+            display: flex;
+            flex: 1;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.4s ease-out;
+        }
+       
+        .details {
+            width: 55%;
+            
+        }
+    
+        .owner {
+            margin: 10px 0px 0px 10px;
+            font-weight: bold;
+        }
+        .owner p{
+            font-size :15px; 
+        }
+        .pics img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    
+        .contacts {
+            display: flex;
+            flex-direction: column;
+           
+        }
+    
+        .call,
+        .whatsapp-msg,
+        .book {
+            width: 170px;
+            height: 33px;
+            font-size: 15px;
+            border-radius: 10px;
+            margin: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.4s ease-in-out;
+        }
+        .book{
+            background-color: orangered;
+        }
+        .call:hover,
+        .whatsapp-msg:hover,
+        .book:hover {
+            background-color: #0056b3;
+            height: 35px;
+            width: 173px;
+        }
+    
+        .call img,
+        .whatsapp-msg img,
+        .book img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    
+        .call a,
+        .whatsapp-msg a,
+        .book a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+    
+        /* Add a subtle hover effect to improve interactivity */
+
+/* //////////////////////////////////////////////////////////services    start/////////////////////////////////////////////////////////*/
+        .services{
+            width: 96%;
+            height: 324px;
+            display: flex;
+            margin-top:30px ;
+            margin-left: 36px;
+            justify-content: space-around;
+        }
+        #on-time{
+             margin: 14px;
+            height:200px;
+            width: 200px;
+        }
+        #safe{
+            margin-top: 29px;
+            margin-left: -24px;
+            height:200px;
+            width: 200px;
+        }
+
+        
+        #driverr, #tourr{
+            border-radius: 50%;
+        }
+        #driverr {
+            margin: 15px;
+            height:150px;
+            width: 150px;
+            margin-top: 65px;
+        }
+        #tourr{
+           margin: 15px;
+            height:150px;
+            width: 150px; 
+            margin-top: 65px;
+        }
+        
+        
+/*//////////////////////////////////////////////////////// contact us  starts////////////////////////////////////////////////////////////*/
+        
+    .footer {
+      background-color: #1a1919;
+      padding: 20px 0;
+      color: rgb(206, 206, 206);
+    }
+
+   .footer-content {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+    }
+
+    .footer-column {
+        width: 20%;
+    }
+    .gif{
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-column li {
+        margin-bottom: 5px;
+    }
+
+    .footer-column a {
+     color: rgb(206, 206, 206);
+     text-decoration: none;
+     transition: all 0.2s ease-in-out;
+    }
+
+    .footer-column a:hover {
+        color: #428bca;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-copyright p {
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+
+
+/*////////
+////////////////////////
+////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* //////////////////////////////////////// Mobile view /////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 800px) {
+    body {
+        
+        width: 100%;
+        height: auto;
+    }
+
+    /* Company name style */
+    .company-name {
+        margin-left: 2px;
+        width: 96%;
+        height: 9vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+    }
+
+    #one {
+        color: black;
+        font-size: 23px;
+        margin: 10px 0px 0px 8px;
+        text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+        font-family: cursive;
+    }
+
+    #two {
+        color: rgb(233, 27, 27);
+        font-size: 23px;
+        margin: 10px 1px 1px 3px;
+        text-shadow: 2px 2px 4px rgba(228, 51, 51, 0.5);
+        font-family: cursive;
+        opacity: 100%;
+    }
+
+    #logo {
+        width: 67px;
+        height: 69px;
+        border-radius: 50%;
+        margin: -3px -125px 1px 4px;
+    }
+
+    hr {
+        color: blue;
+        width: 95%;
+    }
+
+    /*/////////////////////////////////////////////////////////// Navbar starts////////////////////////////////////// */
+    nav {
+        color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        float: right;
+        margin: 1px 1px 1px 1px;
+    }
+
+    .mainMenu {
+        height: 55vh;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        left: 30%;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(252, 248, 248);
+        transition: top 1s ease 0s;
+        display: none;
+    }
+
+    .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .openMenu {
+        display: block;
+        margin: 13px 1px 1px 225px;
+    }
+
+    .mainMenu li a:hover {
+        background: none;
+        list-style: none;
+        color: rgb(255, 123, 0);
+    }
+
+    /* Icons */
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    .fa-facebook:hover {
+        color: rgb(0, 110, 255);
+    }
+
+    .fa-linkedin:hover {
+        color: rgb(86, 154, 243);
+    }
+
+    .fa-instagram:hover {
+        color: rgb(255, 0, 191);
+    }
+
+    .fa-github:hover {
+        color: rgb(255, 123, 0);
+    }
+    
+        .mainMenu li{
+            list-style: none;
+        }
+        nav .mainMenu li a {
+         background-color: inherit;
+         display: inline-block;
+         padding: 6px;
+         text-decoration: none;
+         text-transform: uppercase;
+         color: rgb(7, 7, 7);
+         font-size: 20px;
+         transition: 0.2s ease;
+         text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+          }
+
+        nav .mainMenu li a:hover {
+            background: rgb(255, 94, 0);
+        }
+    
+        nav .mainMenu .closeMenu {
+            display: block;
+            position: absolute;
+            font-size: 30px;
+            top: 20px;
+            right: 20px;
+            
+        }
+    
+        nav .openMenu {
+            display: block;
+            margin: 19px 1px 1px 215px;
+        }
+    
+        nav .mainMenu li a:hover {
+            background: none;
+            color: rgb(255, 123, 0);
+        }
+    
+        .icons i {
+            display: inline-block;
+            width: 10px;
+            padding: 10px;
+    
+        }
+
+        nav .logo {
+         margin: 6px;
+         cursor: pointer; 
+         text-transform: uppercase;
+        }
+
+        nav .openMenu {
+            font-size: 25px;
+            display: flex;
+            cursor: pointer;
+        }
+    
+ 
+    /*/////////////////////////////////////////////// slider Starts //////////////////////////////////////////////// */
+        .slider-container {
+    
+            width: 364px;
+            height: 183px;
+            margin: 4px 0px 0px 5px;
+            position: relative;
+            overflow: auto;
+    
+        }
+    
+        .slider {
+            width: 100%;
+            height: 100%;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    
+        .slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+         .buttons {
+            position: absolute;
+            cursor: pointer;
+    
+        }
+    
+        .buttons img {
+            background-color: inherit;
+            border-radius: 50%;
+            border: 2px solid rgb(0, 204, 255);
+            width: 22px;
+            height: 22px;
+    
+        }
+    
+        .buttons button:hover {
+            width: 20px;
+            height: 20px;
+        }
+    
+        #prev {
+            float: left;
+            margin: 70px 1px 1px 1px;
+        }
+    
+        #next {
+            margin: 70px 1px 1px 308px;
+        }
+    
+  
+    /*///////////////////////////////////////////////////////// our cars area starts//////////////////////////////////////////////////////////// */
+    .ourcars{
+        margin-top: 20px ;
+       display: flex;
+       justify-content: space-around;
+    }     
+    .ourcars h2{   
+        margin-top: 10px; 
+        font-size: 10px;
+        color: rgba(153, 0, 0, 0.897);
+        justify-content: center;
+        align-items: center;
+    }
+        .ourcars a{
+            text-decoration: none;
+        }
+   #premium {
+       width: 50px;
+       height: 50px;
+       border: 5px solid #853b05;
+        box-shadow: 1px 1px 2px #853b05;
+       background-color: antiquewhite;
+       border-radius: 50%;
+       overflow: hidden;
+      
+   }
+        #premium:hover {
+            transform: scale(1.02);
+            box-shadow: 1px 1px 3px #853b05;
+        }
+
+   #premium img {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+    }
+    #eco-ac{
+        width: 50px;
+       height: 50px;
+       border: 5px solid #155154;
+       box-shadow: 1px 1px 2px #155154;
+       background-color: antiquewhite;
+       border-radius: 50%;
+       overflow: hidden;
+      
+    }
+         #eco-ac:hover {
+             transform: scale(1.02);
+            box-shadow: 1px 1px 3px #155154;
+         }
+    
+         #eco-ac img {
+            width: 100%;
+                height: 100%;
+                object-fit: cover;
+         }
+    #eco{
+    width: 50px;
+        height: 50px;
+       border: 5px solid #85762d;
+        box-shadow: 2px 4px 5px #85762d;
+       background-color: antiquewhite;
+       border-radius: 50%;
+       overflow: hidden;
+      
+    }
+    #eco:hover {
+            transform: scale(1.02);
+            box-shadow: 1px 1px 3px #85762d;
+        }
+         #eco img {
+            width: 100%;
+                height: 100%;
+                object-fit: cover;
+         }
+    #carrier{
+    width: 50px;
+        height: 50px;
+       border: 5px solid #bb3838e0;
+       box-shadow: 1px 1px 2px #bb3838e0;;
+       background-color: antiquewhite;
+       border-radius: 50%;
+       overflow: hidden;
+      
+    }
+    #carrier:hover{
+        transform: scale(1.02);
+        box-shadow: 1px 1px 3px #bb3838e0;
+    }
+        #carrier img {
+            width: 100%;
+                height: 100%;
+                object-fit: cover;
+         }
+    #prem{
+        margin: 1px 1px 1px -2px;
+    }
+    #ac{
+        margin: 1px 1px 1px -10px;
+    }
+    #economy{
+        margin: 1px 1px 1px 1px;
+    }
+    #carr{
+        margin: 1px 1px 1px 1px;
+    }
+
+    /*//////////////////////////////////////////////// Booking area starts////////////////////////////////////////// */
+    .booking-area {
+        margin-top: 10px;
+        display: block;
+        width: 96%;
+        margin-left: 8px;
+        padding: 20px;
+        color: rgb(6, 6, 48);
+    }
+
+    .img-area {
+        width: 96%;
+        height: auto;
+    }
+    .img-area h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .img-area h3{
+        font-size: 15px;
+    }
+    /* Styling for the image area */
+    .img-area img {
+        max-width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .read-more {
+        background-color: #029728;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 90px;
+        height: 30px;
+        font-size: 10px;
+        margin-left: 100px;
+        transition: transform 0.3s;
+        animation: moveUpDown .3s infinite alternate;
+    }
+
+    @keyframes moveUpDown {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-4px);
+        }
+    }
+
+    .read-more:hover {
+        background-color: #026824;
+        animation: none;
+    }
+
+    .read-more:active {
+        transform: translateY(4px);
+    }
+
+    .img-area img {
+        width: 96%;
+        height: 90%;
+        border: none;
+    }
+
+    /*///////////////////////////////////////////////////// form area /////////////////////////////////////////////////*/
+    .form-area {
+        width: 99%;
+        border-radius: 20px;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-color: #0056b3;
+        box-shadow: 2px 2px #2a3c50;
+        margin-left: -20px;
+    }
+
+    form {
+        margin-top: 5px;
+    }
+
+    form h1 {
+        font-size: 20px;
+    }
+
+    /* Styling for labels */
+    label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 6px;
+    }
+
+    /* Styling for input fields */
+    input[type="text"] {
+        width: 79%;
+        height: 30px;
+        margin-bottom: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    #destination {
+        width: 71%;
+        height: 30px;
+    }
+
+    input[type="number"] {
+        width: 71%;
+        height: 30px;
+        margin-bottom: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="email"] {
+        width: 80%;
+        height: 30px;
+        margin-bottom: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="date"] {
+        width: 50%;
+        height: 30px;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    #c13 {
+        width: 47%;
+        height: 30px;
+    }
+
+    #c17 {
+        width: 50%;
+        height: 30px;
+    }
+
+    #c18 {
+        width: 50%;
+        height: 30px;
+    }
+
+    #c16 {
+        width: 50%;
+        height: 30px;
+    }
+
+    #c15 {
+        width: 50%;
+        height: 30px;
+    }
+
+    select {
+        width: 81%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    /* Styling for the submit button */
+    button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    /*////////////////////////////////////////////////// Direct booking profile //////////////////////////////////// */
+    .direct-book {
+        width: 98%;
+        height: fit-content;
+        margin-top: 5px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cars {
+        border: 2px solid #000;
+        border-radius: 20px;
+        padding: 2px;
+        width: 98%;
+        height: 380px;
+        margin: 1px 0px 25px 5px;
+        display: flex;
+        flex: 1;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .details {
+        width: 55%;
+        height: 100%;
+        padding: 5px;
+    }
+
+    .owner {
+        margin: -5px 1px 1px 4px;
+        font-weight: bold;
+    }
+    .owner{
+        font-size: 15px;
+    }
+    .pics {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .pics img {
+        width: 97%;
+        height: 80%;
+        border-radius: 10px;
+        margin: 10px 0px 4px 1px;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .call,
+    .whatsapp-msg,
+    .book {
+        width: 148px;
+        border: 1px solid rgb(13, 25, 53);
+        height: 30px;
+        font-size: 15px;
+        border-radius: 10px;
+        margin: 5px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .call:hover,
+    .whatsapp-msg:hover,
+    .book:hover {
+        background-color: #0056b3;
+    }
+
+    .call img,
+    .whatsapp-msg img,
+    .book img {
+        width: 27px;
+        height: 25px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+    .call a,
+    .whatsapp-msg a,
+    .book a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .contact {
+        margin-left: 30px;
+        width: 96%;
+        margin-top: 20px;
+        padding: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /*//////////////////////////////////////////////////////////// Services/////////////////////////////////////////// */
+    .services {
+        width: 96%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 8px;
+        margin-bottom: 15px;
+        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services h2 {
+        font-size: 20px;
+        margin: 1px 1px 1px 10px;
+    }
+
+    #on-time {
+        height: 170px;
+        width: 170px;
+    }
+
+    #safe {
+        margin-top: 5px;
+        height: 180px;
+        width: 180px;
+        margin-left: 10px;
+    }
+
+    #safe2 {
+        margin-left: 32px;
+    }
+
+    #driverr,
+    #tourr {
+        border-radius: 50%;
+    }
+
+    #driverr {
+        height: 130px;
+        width: 130px;
+        margin-top: 22px;
+        margin-left: 8px;
+    }
+
+    #driverr h2 {
+        margin: 1px 1px 1px 1px;
+    }
+
+    #tourr h2 {
+        margin: 1px 1px 1px 1px;
+    }
+
+    #tourr {
+        height: 130px;
+        width: 130px;
+        margin-top: 22px;
+        margin-left: 31px;
+    }
+ /*////////////////////////////////////////////////////////////////// Footer/////////////////////////////////////////// */
+    .footer {
+        margin: 17px 8px 27px 8px;
+        background-color: #1a1919;
+            padding: 20px 0;
+            color: rgb(206, 206, 206);
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-column {
+        width: 80%;
+    }
+
+    .gif {
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    .footer-column h3 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-column li {
+        margin-bottom: 5px;
+    }
+
+    .footer-column a {
+        color: rgb(206,206,206);
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .footer-column a:hover {
+        color: #428bca;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-copyright p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/*////////
+////////////////////////
+////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/* ********************************************************** tablet view****************************************************************** */
+@media (min-width: 768px) and (max-width: 1024px) {
+        body{
+            
+            width: 100%;
+            height: auto;
+        }
+/*///////////////////////////////////////////////////// company name style ///////////////////////////////////////////////////////////////*/
+     .company-name {
+
+         margin-left: 35px;
+         width: 96%;
+         height: 80px;
+         background-color: rgb(255, 255, 255);
+         align-content: center;
+         display: flex;
+
+     }
+     .company-name{
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 900;
+     }
+
+     #one {
+         color: black;
+         font-size: 32px;
+         margin: 10px 0px 22px 13px;
+         text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+         font-family: cursive;
+     }
+
+     #two {
+         color: rgb(233, 27, 27);
+         font-size: 32px;
+         margin: 10px 1px 1px 3px;
+         text-shadow: 2px 2px 4px rgba(228, 51, 51, 0.5);
+         font-family: cursive;
+         opacity: 100%;
+
+     }
+
+     #logo {
+         width: 80px;
+         height: 90px;
+         border-radius: 50%;
+         margin: -10px 1px 1px 9px;
+     }
+
+    hr  {
+         color: blue;
+         width: 95%;
+     }
+
+     body {
+         font-family: Arial, sans-serif;
+     }
+/* //////////////////////////////////////////////////////////navbar starts //////////////////////////////////////////////////////////////*/
+     nav {
+         color: rgb(0, 0, 0);
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         right: 0;
+     }
+
+        nav .mainMenu {
+            height: 45vh;
+            width: 40%;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            z-index: 10;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgb(252, 248, 248);
+            transition: top 1s ease 0s;
+            display: none;
+          
+        }
+        .mainMenu li{
+            list-style: none;
+        }
+        nav .mainMenu li a {
+         background-color: inherit;
+         display: inline-block;
+         padding: 6px;
+         text-decoration: none;
+         text-transform: uppercase;
+         color: rgb(7, 7, 7);
+         font-size: 20px;
+         transition: 0.2s ease;
+         text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+          }
+
+         nav .mainMenu li a:hover {
+             background: rgb(255, 94, 0);
+         }
+    
+        nav .mainMenu .closeMenu {
+            display: block;
+            position: absolute;
+            font-size: 30px;
+            top: 20px;
+            right: 20px;
+            
+        }
+    
+        nav .openMenu {
+            display: block;
+            margin: 19px 1px 1px 470px;
+        }
+    
+        nav .mainMenu li a:hover {
+            background: none;
+            color: rgb(255, 123, 0);
+        }
+    
+        .icons i {
+            display: inline-block;
+            width: 10px;
+            padding: 10px;
+    
+        }
+
+     .fa-facebook:hover {
+         color: rgb(0, 110, 255);
+     }
+
+     .fa-linkedin:hover {
+         color: rgb(86, 154, 243);
+     }
+
+     .fa-instagram:hover {
+         color: rgb(255, 0, 191);
+     }
+
+     .fa-github:hover {
+         color: rgb(255, 123, 0);
+     }
+
+     nav .logo {
+         margin: 6px;
+         cursor: pointer; 
+         text-transform: uppercase;
+     }
+
+     nav .openMenu {
+        font-size: 25px;
+        display: flex;
+        cursor: pointer;
+     }
+    
+         
+
+   /*////////////////////////////////////////////////////////////// slider  starts//////////////////////////////////////////////////////////// */
+        .slider-container {
+            margin-top: 100px;
+            width: 98%;
+            height: 30vh;
+            margin: 10px 0px 0px 6px;
+            position: relative;
+            overflow: auto;
+    
+        }
+    
+        .slider {
+            width: 100%;
+            height: 100%;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    
+        .slider img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+        }
+    
+    
+        .buttons {
+            position: absolute;
+            cursor: pointer;
+    
+        }
+    
+        .buttons img {
+            background-color: inherit;
+            border-radius: 50%;
+            border: 2px solid rgb(0, 204, 255);
+            width: 39px;
+            height: 39px;
+    
+        }
+    
+        .buttons button:hover {
+            width: 40px;
+            height: 40px;
+        }
+    
+        #prev {
+            float: left;
+            margin: 180px 1px 1px 1px;
+        }
+    
+        #next {
+            margin: 180px 1px 1px 714px;
+        }
+/*///////////////////////////////////////////////////////// our cars area starts//////////////////////////////////////////////////////////// */
+    .ourcars{
+        margin-top: 30px ;
+       display: flex;
+       justify-content: space-around;
+    }     
+    .ourcars h2{    
+        color: rgba(153, 0, 0, 0.897);
+        justify-content: center;
+        align-items: center;
+    }
+    .ourcars a{
+        text-decoration: none;
+    }
+   #premium {
+       width: 120px;
+       height: 120px;
+       border: 5px solid #853b05;
+       box-shadow: 2px 4px 5px #853b05;
+       background-color: antiquewhite;
+       border-radius: 50%;
+       overflow: hidden;
+      
+   }
+   #premium:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 4px 7px #853b05;
+   }
+
+   #premium img {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+    }
+    #eco-ac{
+        width: 120px;
+       height: 120px;
+       border: 5px solid #155154;
+       box-shadow: 2px 4px 5px#155154;
+       background-color: antiquewhite;
+       border-radius: 50%;
+       overflow: hidden;
+      
+    }
+    #eco-ac:hover {
+        transform: scale(1.02);
+        box-shadow: 2px 4px 7px #155154;
+    }
+         #eco-ac img {
+            width: 100%;
+                height: 100%;
+                object-fit: cover;
+         }
+    #eco{
+       width: 120px;
+       height: 120px;
+       border: 5px solid #85762d;
+       box-shadow: 2px 4px 5px #85762d;
+       background-color: antiquewhite;
+       border-radius: 50%;
+       overflow: hidden;
+      
+    }
+    #eco:hover{
+        transform: scale(1.02);
+            box-shadow: 2px 4px 7px#85762d ;
+    }
+         #eco img {
+            width: 100%;
+                height: 100%;
+                object-fit: cover;
+         }
+    #carrier{
+        width: 120px;
+       height: 120px;
+       border: 5px solid #bb3838e0;
+       box-shadow: 2px 4px 5px #bb3838e0;
+       background-color: antiquewhite;
+       border-radius: 50%;
+       overflow: hidden;
+      
+    }
+    #carrier:hover{
+        transform: scale(1.02);
+            box-shadow: 2px 4px 7px#bb3838e0;
+    }
+        #carrier img {
+            width: 100%;
+                height: 100%;
+                object-fit: cover;
+         }
+    #prem{
+        margin: 1px 1px 1px -12px;
+    }
+    #ac{
+        margin: 1px 1px 1px -30px;
+    }
+    #economy{
+        margin: 1px 1px 1px -20px;
+    }
+    #carr{
+        margin: 1px 1px 1px -8px;
+    }
+
+
+/*///////////////////////////////////////////////////// booking area starts  ////////////////////////////////////////////////////////////////*/
+       .img-area {
+            width: 45%;
+            height: 100%;
+            
+        }
+    
+        .img-area img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    
+        .form-area {
+            border: 1px solid black;
+            width: 55%;
+           
+        }
+        
+        /* Styling for the booking area */
+        .booking-area {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            color: rgb(6, 6, 48);
+        }
+    
+        /* Styling for the image area */
+        .img-area img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+    
+        /* Styling for the form area */
+        .form-area {
+            border-radius: 20px;
+            padding: 5px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            border-color: #0056b3;
+            box-shadow: 2px 2px #2a3c50 ;
+        }
+    
+        /* Styling for labels */
+        label {
+            margin-left: 2px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    
+        /* Styling for input fields */
+        input[type="text"],
+        input[type="number"],
+        input[type="email"]{
+            width: 96%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+         input[type="date"]{
+            width: 25%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        select {
+           width: 96%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        /* Styling for the submit button */
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #0056b3;
+        }
+     
+        .read-more {
+    background-color: #029728;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 97px;
+    transition: transform 0.3s;
+    animation: moveUpDown .3s infinite alternate; 
+        }
+
+        @keyframes moveUpDown {
+         0% {
+            transform: translateY(0); 
+           }
+         100% {
+             transform: translateY(-4px); 
+            }
+        }
+
+        .read-more:hover {
+           background-color: #026824;
+           animation: none; 
+        }
+
+        .read-more:active {
+            transform: translateY(4px); 
+        }
+
+        .img-area img{
+         width: 100%;
+         height: 100%;
+         border: none;
+
+        }
+
+/*/////////////////////////////////////////////////////// Direct booking profile /////////////////////////////////////////////////////////////*/
+    .direct-book {
+     width: 96%;
+     height: auto;
+     padding: 20px;
+     border-radius: 10px;
+     margin: 20px auto;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cars {
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    width: 76%;
+    height: 400px;
+    margin: 46px 0px 27px 60px;
+    display: flex;
+    flex: 1;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+   .details {
+     width: 55%;
+     padding: 10px;
+    }
+
+    .owner {
+     margin: -5px 1px 1px 11px;
+     font-weight: bold;
+    }
+
+   .pics img {
+     width: 100%;
+     height: 88%;
+     margin: 4px 0px 4px -3px;
+     border-radius: 10px;
+    }
+
+    .contacts {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 0px;
+    }
+
+    .call,
+    .whatsapp-msg,
+    .book {
+      width: 170px;
+      border: 1px solid rgb(13, 25, 53);
+       height: 40px;
+      font-size: 18px;
+     border-radius: 10px;
+       margin: 5px 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+     transition: background-color 0.3s ease;
+    }
+
+    .call:hover,
+    .whatsapp-msg:hover,
+    .book:hover {
+      background-color: #0056b3;
+    }
+
+    .call img,
+    .whatsapp-msg img,
+    .book img {
+      width: 32px;
+      height: 29px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .call a,
+    .whatsapp-msg a,
+    .book a {
+       text-decoration: none;
+       color: #fff;
+       font-weight: bold;
+    }
+
+
+/* //////////////////////////////////////////////////////////services    start/////////////////////////////////////////////////////////*/
+        .services{
+            width: 92%;
+            height: 324px;
+            display: flex;
+            flex-direction: row;
+            margin-top:30px ;
+            margin-left: 36px;
+            justify-content: space-around;
+        }
+        #on-time{
+             margin: 14px;
+            height:200px;
+            width: 189px;
+        }
+        #safe{
+            margin-top: 29px;
+            margin-left: -24px;
+            height:200px;
+            width: 200px;
+        }
+
+        
+        #driverr, #tourr{
+            border-radius: 50%;
+        }
+        #driverr {
+            margin: 15px;
+            height:150px;
+            width: 150px;
+            margin-top: 65px;
+        }
+        #tourr{
+           margin: 15px;
+            height:150px;
+            width: 150px; 
+            margin-top: 65px;
+        }
+        
+        
+/*//////////////////////////////////////////////////////// contact us  starts////////////////////////////////////////////////////////////*/
+        
+    .footer {
+    background-color: #1a1919;
+        padding: 20px 0;
+        color: rgb(206, 206, 206);
+    }
+
+   .footer-content {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+    }
+
+    .footer-column {
+        width: 20%;
+    }
+    .gif{
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-column li {
+        margin-bottom: 5px;
+    }
+
+    .footer-column a {
+     color: rgb(206, 206, 206);
+     text-decoration: none;
+     transition: all 0.2s ease-in-out;
+    }
+
+    .footer-column a:hover {
+        color: #428bca;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-copyright p {
+        font-size: 14px;
+    }
+} 

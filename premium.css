@@ -1,0 +1,1129 @@
+/*................................,......................Desktop view........................................................................*/
+@media (min-width: 1024px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /*///////////////////////////////////////////////////// company name style ///////////////////////////////////////////////////////////////*/
+    .company-name {
+
+        margin-left: 35px;
+        width: 96%;
+        height: 80px;
+        background-color: rgb(255, 255, 255);
+        align-content: center;
+        display: flex;
+
+    }
+
+    .company-name {
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 900;
+    }
+
+    #one {
+        color: black;
+        font-size: 29px;
+        margin: 10px 0px 22px 13px;
+        text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+        font-family: cursive;
+    }
+
+    #two {
+        color: rgb(233, 27, 27);
+        font-size: 29px;
+        margin: 10px 1px 1px 3px;
+        text-shadow: 2px 2px 4px rgba(228, 51, 51, 0.5);
+        font-family: cursive;
+        opacity: 100%;
+
+    }
+
+    #logo {
+        width: 80px;
+        height: 90px;
+        border-radius: 50%;
+        margin: -10px 1px 1px 9px;
+    }
+
+    hr {
+        color: blue;
+        width: 95%;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    /* //////////////////////////////////////////////////////////navbar starts //////////////////////////////////////////////////////////////*/
+    nav {
+        color: rgb(2, 2, 2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        float: right;
+    }
+
+    nav .mainMenu {
+        display: flex;
+        list-style: none;
+    }
+
+    nav .mainMenu li a {
+        background-color: inherit;
+        display: inline-block;
+        padding: 6px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(7, 7, 7);
+        font-size: 25px;
+        transition: 0.2s ease;
+        text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+    }
+
+    nav .mainMenu li a:hover {
+        background: rgb(255, 94, 0);
+    }
+
+    nav .openMenu {
+        font-size: 30px;
+        display: flex;
+        cursor: pointer;
+    }
+
+    nav .mainMenu .closeMenu,
+    .icons i {
+        font-size: 2rem;
+        display: none;
+        cursor: pointer;
+    }
+
+    .fa-facebook:hover {
+        color: rgb(0, 110, 255);
+    }
+
+    .fa-linkedin:hover {
+        color: rgb(86, 154, 243);
+    }
+
+    .fa-instagram:hover {
+        color: rgb(255, 0, 191);
+    }
+
+    .fa-github:hover {
+        color: rgb(255, 123, 0);
+    }
+
+    nav .logo {
+        margin: 6px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 40px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(252, 248, 248);
+        transition: top 1s ease 0s;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+        margin: 19px 1px 1px 800px;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 10px;
+
+    }
+
+    /*//////////////////////////////////////////////////////upper bar/////////////////////////////////////////////////////*/
+    #upper-bar {
+        width: 100%;
+        height: 150px;
+        background-color: #f0f0f0;
+        text-align: center;
+        margin: 15px 1px 10px 0px;
+
+    }
+
+    #upper-bar img {
+        display: block;
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+        opacity: 60%;
+        position: relative;
+    }
+
+    #upper-bar::before {
+
+        display: block;
+        font-size: 24px;
+        margin-bottom: 10px;
+
+    }
+
+    #heads {
+        width: 99%;
+        height: inherit;
+        background-color: #000000;
+        position: absolute;
+        color: white;
+        opacity: 80%;
+        font-weight: bold;
+        margin: -150px 1px 1px 1px;
+    }
+
+    #heads a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /*//////////////////////////////////////////////////////////car profile/////////////////////////////////////////////////*/
+
+    .profile {
+        width: 98%;
+        display: grid;
+        grid-template-columns: 51.5% 0;
+        column-gap: 5px;
+        row-gap: 50px;
+        padding: 16px;
+        margin: 25px 1px 20px 17px;
+    }
+
+    .accar {
+        width: 600px;
+        height: 400px;
+        border: 2px solid rgba(7, 6, 68, 0.959);
+        box-shadow: 4px 5px 9px;
+        margin: 10px 1px 30px 15px;
+        border-radius: 4px;
+    }
+
+    .accar:hover {
+        transform: scale(1.02);
+        box-shadow: 4px 5px 12px rgba(4, 3, 63, 0.959);
+    }
+
+    .accar h2 {
+        font-size: 30px;
+        color: #01024b;
+    }
+
+    /* .details {
+            
+            
+        } */
+
+    .owner {
+        margin: -202px 0px 0px 371px;
+        font-weight: bold;
+    }
+
+    .owner p {
+        font-size: 15px;
+    }
+
+    .pics img {
+        width: 60%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .contacts {
+        display: flex;
+
+    }
+
+    .call,
+    .whatsapp-msg,
+    .book {
+        width: 174px;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 10px;
+        margin: 19px 1px 1px 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #01024b;
+        box-shadow: 2px 4px 6px rgb(3, 3, 53);
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .book {
+        background-color: orangered;
+    }
+
+    .call:hover,
+    .whatsapp-msg:hover {
+        background-color: #01024b;
+        box-shadow: #01024b;
+        transform: scale(1.05)
+    }
+
+    .book:hover {
+        background-color: orangered;
+        box-shadow: #01024b;
+        transform: scale(1.05)
+    }
+
+    .call img,
+    .whatsapp-msg img,
+    .book img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 8px;
+        margin-top: 3px;
+    }
+
+    .call a,
+    .whatsapp-msg a,
+    .book a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    /*//////////////////////////////////////////////////////// contact us  starts////////////////////////////////////////////////////////////*/
+
+    .footer {
+        background-color: #1a1919;
+            padding: 20px 0;
+            color: rgb(206, 206, 206);
+    }
+
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        width: 20%;
+    }
+
+    .gif {
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-column li {
+        margin-bottom: 5px;
+    }
+
+    .footer-column a {
+        color: rgb(206, 206, 206);
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .footer-column a:hover {
+        color: #428bca;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-copyright p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* ********************************************************** mobile view****************************************************************** */
+@media only screen and (max-width: 800px) {
+    body {
+        
+        width: 100%;
+        height: auto;
+    }
+
+    /*///////////////////////////////////////////////////// company name style ///////////////////////////////////////////////////////////////*/
+    .company-name {
+        margin-left: 2px;
+        width: 96%;
+        height: 9vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+    }
+
+    #one {
+        color: black;
+        font-size: 23px;
+        margin: 10px 0px 0px 8px;
+        text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+        font-family: cursive;
+    }
+
+    #two {
+        color: rgb(233, 27, 27);
+        font-size: 23px;
+        margin: 10px 1px 1px 3px;
+        text-shadow: 2px 2px 4px rgba(228, 51, 51, 0.5);
+        font-family: cursive;
+        opacity: 100%;
+
+    }
+
+    #logo {
+        width: 67px;
+        height: 69px;
+        border-radius: 50%;
+        margin: -3px -125px 1px 4px;
+    }
+
+    hr {
+        color: blue;
+        width: 95%;
+    }
+
+
+    /* //////////////////////////////////////////////////////////navbar starts //////////////////////////////////////////////////////////////*/
+      /*/////////////////////////////////////////////////////////// Navbar starts////////////////////////////////////// */
+        nav {
+            color: rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            float: right;
+            margin: 1px 1px 1px 1px;
+        }
+    
+        .mainMenu {
+            height: 55vh;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            left: 30%;
+            z-index: 10;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgb(252, 248, 248);
+            transition: top 1s ease 0s;
+            display: none;
+        }
+    
+        .closeMenu {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    
+        .openMenu {
+            display: block;
+            margin: 13px 1px 1px 225px;
+        }
+    
+        .mainMenu li a:hover {
+            background: none;
+            list-style: none;
+            color: rgb(255, 123, 0);
+        }
+    
+        /* Icons */
+        .icons i {
+            display: inline-block;
+            padding: 12px;
+        }
+    
+        .fa-facebook:hover {
+            color: rgb(0, 110, 255);
+        }
+    
+        .fa-linkedin:hover {
+            color: rgb(86, 154, 243);
+        }
+    
+        .fa-instagram:hover {
+            color: rgb(255, 0, 191);
+        }
+    
+        .fa-github:hover {
+            color: rgb(255, 123, 0);
+        }
+    
+        .mainMenu li {
+            list-style: none;
+        }
+    
+        nav .mainMenu li a {
+            background-color: inherit;
+            display: inline-block;
+            padding: 6px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: rgb(7, 7, 7);
+            font-size: 20px;
+            transition: 0.2s ease;
+            text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+        }
+    
+        nav .mainMenu li a:hover {
+            background: rgb(255, 94, 0);
+        }
+    
+        nav .mainMenu .closeMenu {
+            display: block;
+            position: absolute;
+            font-size: 30px;
+            top: 20px;
+            right: 20px;
+    
+        }
+    
+        nav .openMenu {
+            display: block;
+            margin: 19px 1px 1px 215px;
+        }
+    
+        nav .mainMenu li a:hover {
+            background: none;
+            color: rgb(255, 123, 0);
+        }
+    
+        .icons i {
+            display: inline-block;
+            width: 10px;
+            padding: 10px;
+    
+        }
+    
+        nav .logo {
+            margin: 6px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+    
+        nav .openMenu {
+            font-size: 25px;
+            display: flex;
+            cursor: pointer;
+        }
+    /*//////////////////////////////////////////////////////upper bar/////////////////////////////////////////////////////*/
+    #upper-bar {
+        width: 100%;
+        height: 80px;
+        background-color: #f0f0f0;
+        text-align: center;
+        margin: 4px 1px 10px 0px;
+
+    }
+
+    #upper-bar img {
+        display: block;
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+        opacity: 60%;
+        position: relative;
+    }
+
+    #upper-bar::before {
+
+        display: block;
+        font-size: 18px;
+        margin-bottom: 10px;
+
+    }
+
+    #heads {
+        width: 100%;
+        height: inherit;
+        background-color: #000000;
+        position: absolute;
+        color: white;
+        opacity: 80%;
+        font-weight: bold;
+        margin: -79px 1px 1px 0px;
+    }
+
+    #heads h1 {
+        font-size: 18px;
+    }
+
+    #heads h3 {
+        font-size: 12px;
+    }
+
+    #heads a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /*//////////////////////////////////////////////////////////car profile/////////////////////////////////////////////////*/
+
+    .profile {
+        width: 98%;
+        display: grid;
+        column-gap: 5px;
+        row-gap: 5px;
+        padding: 4px;
+        margin: 10px 1px 10px 2px;
+    }
+
+    .accar {
+        width: 335px;
+            height: 230px;
+        border: 2px solid rgba(7, 6, 68, 0.959);
+        box-shadow: 4px 5px 9px;
+        margin: 7px 1px 10px 3px;
+        border-radius: 4px;
+    }
+
+    .accar:hover {
+        transform: scale(1.02);
+        box-shadow: 4px 5px 10px rgba(4, 3, 63, 0.959);
+    }
+
+    .accar h2 {
+        font-size: 15px;
+        color: #01024b;
+    }
+
+
+    .owner {
+        margin: -126px 0px 0px 219px;
+        font-weight: bold;
+
+    }
+
+    .owner p {
+        font-size: 10px;
+    }
+
+    .pics img {
+        width: 60%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .contacts {
+        display: flex;
+
+    }
+
+    .call,
+    .whatsapp-msg,
+    .book {
+        width: 92px;
+        height: 23px;
+        font-size: 10px;
+        border-radius: 10px;
+        margin: 9px 1px 1px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #01024b;
+        box-shadow: 2px 4px 6px rgb(3, 3, 53);
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .book {
+        background-color: orangered;
+    }
+
+    .call:hover,
+    .whatsapp-msg:hover {
+        background-color: #01024b;
+        box-shadow: #01024b;
+        transform: scale(1.05)
+    }
+
+    .book:hover {
+        background-color: orangered;
+        box-shadow: #01024b;
+        transform: scale(1.05)
+    }
+
+    .call img,
+    .whatsapp-msg img,
+    .book img {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-right: 8px;
+        margin-top: 3px;
+    }
+
+    .call a,
+    .whatsapp-msg a,
+    .book a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    /*//////////////////////////////////////////////////////// contact us  starts////////////////////////////////////////////////////////////*/
+
+    .footer {
+        margin: 17px 8px 27px 8px;
+        background-color: #1a1919;
+            padding: 20px 0;
+            color: rgb(206, 206, 206);
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-column {
+        width: 80%;
+    }
+
+    .gif {
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    .footer-column h3 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-column li {
+        margin-bottom: 5px;
+    }
+
+    .footer-column a {
+        color: rgb(206, 206, 206);
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .footer-column a:hover {
+        color: #428bca;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-copyright p {
+        font-size: 14px;
+    }
+
+}
+
+
+/* ********************************************************** tablet view****************************************************************** */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        
+        width: 100%;
+        height: auto;
+    }
+
+    /*///////////////////////////////////////////////////// company name style ///////////////////////////////////////////////////////////////*/
+    .company-name {
+
+        margin-left: 35px;
+        width: 96%;
+        height: 80px;
+        background-color: rgb(255, 255, 255);
+        align-content: center;
+        display: flex;
+
+    }
+
+    .company-name {
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 900;
+    }
+
+    #one {
+        color: black;
+        font-size: 29px;
+        margin: 10px 0px 22px 13px;
+        text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+        font-family: cursive;
+    }
+
+    #two {
+        color: rgb(233, 27, 27);
+        font-size: 29px;
+        margin: 10px 1px 1px 3px;
+        text-shadow: 2px 2px 4px rgba(228, 51, 51, 0.5);
+        font-family: cursive;
+        opacity: 100%;
+
+    }
+
+    #logo {
+        width: 80px;
+        height: 90px;
+        border-radius: 50%;
+        margin: -10px 1px 1px 9px;
+    }
+
+    hr {
+        color: blue;
+        width: 95%;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+   /* //////////////////////////////////////////////////////////navbar starts //////////////////////////////////////////////////////////////*/
+   nav {
+       color: rgb(0, 0, 0);
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       right: 0;
+   }
+
+   nav .mainMenu {
+       height: 45vh;
+       width: 40%;
+       position: absolute;
+       top: -10px;
+       right: -10px;
+       z-index: 10;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background: rgb(252, 248, 248);
+       transition: top 1s ease 0s;
+       display: none;
+
+   }
+
+   .mainMenu li {
+       list-style: none;
+   }
+
+   nav .mainMenu li a {
+       background-color: inherit;
+       display: inline-block;
+       padding: 6px;
+       text-decoration: none;
+       text-transform: uppercase;
+       color: rgb(7, 7, 7);
+       font-size: 20px;
+       transition: 0.2s ease;
+       text-shadow: 2px 2px 4px rgba(27, 24, 24, 0.589);
+   }
+
+   nav .mainMenu li a:hover {
+       background: rgb(255, 94, 0);
+   }
+
+   nav .mainMenu .closeMenu {
+       display: block;
+       position: absolute;
+       font-size: 30px;
+       top: 20px;
+       right: 20px;
+
+   }
+
+   nav .openMenu {
+       display: block;
+       margin: 19px 1px 1px 470px;
+   }
+
+   nav .mainMenu li a:hover {
+       background: none;
+       color: rgb(255, 123, 0);
+   }
+
+   .icons i {
+       display: inline-block;
+       width: 10px;
+       padding: 10px;
+
+   }
+
+   .fa-facebook:hover {
+       color: rgb(0, 110, 255);
+   }
+
+   .fa-linkedin:hover {
+       color: rgb(86, 154, 243);
+   }
+
+   .fa-instagram:hover {
+       color: rgb(255, 0, 191);
+   }
+
+   .fa-github:hover {
+       color: rgb(255, 123, 0);
+   }
+
+   nav .logo {
+       margin: 6px;
+       cursor: pointer;
+       text-transform: uppercase;
+   }
+
+   nav .openMenu {
+       font-size: 25px;
+       display: flex;
+       cursor: pointer;
+   }
+    /*//////////////////////////////////////////////////////upper bar/////////////////////////////////////////////////////*/
+    #upper-bar {
+        width: 100%;
+        height: 150px;
+        background-color: #f0f0f0;
+        text-align: center;
+        margin: 15px 1px 10px 0px;
+
+    }
+
+    #upper-bar img {
+        display: block;
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+        opacity: 60%;
+        position: relative;
+    }
+
+    #upper-bar::before {
+
+        display: block;
+        font-size: 24px;
+        margin-bottom: 10px;
+
+    }
+
+    #heads {
+        width: 99%;
+        height: inherit;
+        background-color: #000000;
+        position: absolute;
+        color: white;
+        opacity: 80%;
+        font-weight: bold;
+        margin: -150px 1px 1px 1px;
+    }
+
+    #heads a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /*//////////////////////////////////////////////////////////car profile/////////////////////////////////////////////////*/
+
+    .profile {
+        width: 98%;
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 5px;
+        row-gap: 5px;
+        padding: 4px;
+        margin: 10px 1px 10px 2px;
+    }
+
+    .accar {
+        width: 385px;
+        height: 250px;
+        border: 2px solid rgba(7, 6, 68, 0.959);
+        box-shadow: 4px 5px 9px;
+        margin: 7px 1px 10px 3px;
+        border-radius: 4px;
+    }
+
+    .accar:hover {
+        transform: scale(1.02);
+        box-shadow: 4px 5px 10px rgba(4, 3, 63, 0.959);
+    }
+
+    .accar h2 {
+        font-size: 15px;
+        color: #01024b;
+    }
+
+
+    .owner {
+        margin: -136px 0px 0px 230px;
+        font-weight: bold;
+
+    }
+
+    .owner p {
+        font-size: 10px;
+    }
+
+    .pics img {
+        width: 62%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .contacts {
+        display: flex;
+
+    }
+
+    .call,
+    .whatsapp-msg,
+    .book {
+        width: 100px;
+        height: 27px;
+        font-size: 12px;
+        border-radius: 10px;
+        margin: 9px 1px 1px 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #01024b;
+        box-shadow: 2px 4px 6px rgb(3, 3, 53);
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .book {
+        background-color: orangered;
+    }
+
+    .call:hover,
+    .whatsapp-msg:hover {
+        background-color: #01024b;
+        box-shadow: #01024b;
+        transform: scale(1.05)
+    }
+
+    .book:hover {
+        background-color: orangered;
+        box-shadow: #01024b;
+        transform: scale(1.05)
+    }
+
+    .call img,
+    .whatsapp-msg img,
+    .book img {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        margin-right: 8px;
+        margin-top: 3px;
+    }
+
+    .call a,
+    .whatsapp-msg a,
+    .book a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    /*//////////////////////////////////////////////////////// contact us  starts////////////////////////////////////////////////////////////*/
+
+    .footer {
+    background-color: #1a1919;
+        padding: 20px 0;
+        color: rgb(206, 206, 206);
+    }
+
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        width: 20%;
+    }
+
+    .gif {
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-column li {
+        margin-bottom: 5px;
+    }
+
+    .footer-column a {
+        color: rgb(206, 206, 206);
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .footer-column a:hover {
+        color: #428bca;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-copyright p {
+        font-size: 14px;
+    }
+}
